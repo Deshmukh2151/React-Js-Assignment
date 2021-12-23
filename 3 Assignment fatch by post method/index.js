@@ -1,5 +1,5 @@
-
-fetch('https://jsonplaceholder.typicode.com/users', {
+function hello(){
+ return fetch('https://jsonplaceholder.typicode.com/users', {
     method: 'POST',
     body: JSON.stringify({
       id: 1,
@@ -14,4 +14,7 @@ fetch('https://jsonplaceholder.typicode.com/users', {
     .then((response) => response.json())
     .then((json) => console.log(json));
     document.write(data)
+}
+
+hello();
 
